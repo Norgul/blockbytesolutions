@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Home')
+@section('title', 'Web development agency')
 @section('content')
         <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -46,7 +46,7 @@
     <div class="container">
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Block Byte Solutions!</div>
-            <div class="intro-heading">It's Nice To Meet You</div>
+            <div class="intro-heading">Web development agency</div>
             <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
@@ -59,19 +59,18 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Services</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Some of the services we offer.</h3>
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideinleft">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">E-Commerce</h4>
+                <h4 class="service-heading">Application functionality</h4>
 
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                    architecto quo inventore harum ex magni, dicta impedit.</p>
+                <p class="text-muted">Implementing functionalities for website applications on demand.</p>
             </div>
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -80,8 +79,8 @@
                     </span>
                 <h4 class="service-heading">Responsive Design</h4>
 
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                    architecto quo inventore harum ex magni, dicta impedit.</p>
+                <p class="text-muted">Designs which scale well on any screen type. Everything from PC through tablets
+                    and mobile phones.</p>
             </div>
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -90,21 +89,24 @@
                     </span>
                 <h4 class="service-heading">Web Security</h4>
 
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                    architecto quo inventore harum ex magni, dicta impedit.</p>
+                <p class="text-muted">Using the latest security standards to ensure that your website doesn't get
+                    compromised.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Portfolio Grid Section -->
+@include('sections.carousel')
+
+
+        <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Portfolio</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Latest projects from our development team.</h3>
             </div>
         </div>
         <div class="row">
@@ -215,7 +217,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">About</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Block Byte Solutions history.</h3>
             </div>
         </div>
         <div class="row">
@@ -227,13 +229,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
+                                <h4>2013-2014</h4>
                                 <h4 class="subheading">Our Humble Beginnings</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Idea for the web development agency was born.
+                                    There began a thought process for making the agency come to life!</p>
                             </div>
                         </div>
                     </li>
@@ -243,13 +244,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
+                                <h4>March 2014</h4>
                                 <h4 class="subheading">An Agency is Born</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Preparations were done, domain names, website, team and office
+                                    were ready!</p>
                             </div>
                         </div>
                     </li>
@@ -259,7 +259,7 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
+                                <h4>December 2015</h4>
                                 <h4 class="subheading">Transition to Full Service</h4>
                             </div>
                             <div class="timeline-body">
@@ -305,7 +305,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Our Amazing Team</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Developers which made the dream possible.</h3>
             </div>
         </div>
         <div class="row">
@@ -360,8 +360,8 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <p class="large text-muted">In addition to the current team, we are always in pursuit of the new
+                    development forces so feel free to contact us.</p>
             </div>
         </div>
     </div>
@@ -402,28 +402,32 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">We are at your service.</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form name="sentMessage" role="form" id="contactForm" class="form-horizontal"
+                      enctype="multipart/form-data"
+                      method="POST" action="{{ route('contact')}}">
+                    {!! Form::token() !!}
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required
+                                <input type="text" name="name" class="form-control" placeholder="Your Name *" id="name" required
                                        data-validation-required-message="Please enter your name.">
 
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required
+                                <input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" required
                                        data-validation-required-message="Please enter your email address.">
 
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required
+                                <input type="tel" name="phone" class="form-control" placeholder="Your Phone *" id="phone" required
                                        data-validation-required-message="Please enter your phone number.">
 
                                 <p class="help-block text-danger"></p>
@@ -431,7 +435,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" required
+                                <textarea name="message" class="form-control" placeholder="Your Message *" id="message" required
                                           data-validation-required-message="Please enter a message."></textarea>
 
                                 <p class="help-block text-danger"></p>
@@ -448,4 +452,11 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('scripts')
+    <script>
+        new WOW().init();
+    </script>
 @endsection

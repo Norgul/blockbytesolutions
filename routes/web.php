@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
+
+Route::post('contact', ['as' => 'contact', 'uses' => 'HomeController@sendEmail']);
